@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="font-size: 10mm;">"Создай свой бургер!</h2>
+    <form>
+        <hr>
+        <label for="meet">Какое мясо?</label>
+        <input type="text" id="meet" name="meet">
+        <hr>
+        <label for='amount'>Сколько котлет?</label>
+        <input type="number" id="amount" name="amount" value="1">
+        <hr>
+        <label for="doneness">Степень прожарки</label>
+        <br>
+        <span>Сырое</span>
+        <input type="range" id="doneness" name="done">
+        <span>Сильно прожареное</span>
+        <hr>
+        <label for="added">Что добавить?</label>
+        <br>
+        <label for="vegs">Салат</label>
+        <input type='checkbox' id='vegs' name='vegs' value='vegs'>
+        <br>
+        <label for="add_vegs">Дополнительные овощи (огурцы)</label>
+        <input type="checkbox" id='add_vegs' name='add_vegs' value='add_vegs'>
+        <br>
+        <label for="add_sause">Дополнительный соус </label>
+        <input type="checkbox" id='add_sause' name='add_sause' value='add_sause'>
+      <hr>
+        <label for="cheese">Что насчёт сыра?</label>
+        <br>
+        <input type="radio" id="Yes" value="Yes" name="cheese">
+        <label for="Yes">Да,хочу</label>
+        <br>
+        <input type="radio" id="No" value="No" name="cheese">
+        <label for="No">Нет</label> 
+        <hr>
+        <label for="bun">Какая булка?</label>
+        <select name="bun" id="bun">
+            <option value="standard">Обычная</option>
+            <option value="seasem">С кунжутом</option>
+              <option value="potato">Картофельная</option>
+        </select>
+        <hr>
+        <label for="sause">Какой соус хотите?</label>
+        <input list="sauce_list" id="sauce" name="sauces">
+        <datalist id="sauce_list">
+            <option value="Кетчуп">Кетчуп</option>
+            <option value="Сырный">Сырный</option>
+            <option value="Барбекю">Барбекю</option>
+        </datalist>
+    </form>
+</body>
+</html>
